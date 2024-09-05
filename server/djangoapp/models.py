@@ -21,7 +21,7 @@ class CarModel(models.Model):
 
     car_make = models.ForeignKey(CarMake, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
-    CAR_TYPES = [('SEDAN', 'Sedan'), ('SUV', 'SUV'), 
+    CAR_TYPES = [('SEDAN', 'Sedan'), ('SUV', 'SUV'),
                  ('WAGON', 'Wagon'), ('SPORT', 'Sport')]
     type = models.CharField(max_length=10, choices=CAR_TYPES,
                             default='SUV')
